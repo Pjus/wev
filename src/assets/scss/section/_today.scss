@@ -17,8 +17,6 @@
 .thumnail{
     min-width:100%;
     object-fit: cover;
-    height: 100%;
-
 }
 
 .today__text {
@@ -81,6 +79,11 @@
 
         .today__thumb {
             width: 100%;
+        }
+        .thumnail{
+            min-width:100%;
+            object-fit: cover;
+            height: 250px;
         }
         .today__text {
             width: 100%;

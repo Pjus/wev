@@ -14,7 +14,7 @@ import { AiOutlineInstagram } from "react-icons/ai";
 
 export const headerMenus = [
     {
-        title: "JUN",
+        title: "메인",
         icon: <CiBaseball />,
         src: "/"
     },
