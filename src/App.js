@@ -14,9 +14,15 @@ import Video from './pages/Video'
 import Search from './pages/Search'
 import Not from './pages/Not'
 
+import Header from './components/section/Header';   //추가
+import Main from './components/section/Main';       //추가
+import Footer from './components/section/Footer';   //추가
+
 const App = () => {
     return (
         <BrowserRouter>
+        <Header/>
+        <Main>
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/today" element={<Today/>}/>
@@ -31,6 +37,8 @@ const App = () => {
                 <Route path="/search/:searchId" element={<Search/>}/>
                 <Route path="*" element={<Not/>}/>
             </Routes>
+        </Main>
+        <Footer/>
         </BrowserRouter>
     )
 }
