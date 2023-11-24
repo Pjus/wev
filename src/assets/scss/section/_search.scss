@@ -1,0 +1,47 @@
+.search__inner {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    padding: 17px 40px;
+    border-bottom: 1px solid var(--black100);
+
+    label {
+        width: 24px;
+        height: 24px;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCI+PGRlZnM+PGZpbHRlciBpZD0iZGFya3JlYWRlci1pbWFnZS1maWx0ZXIiPjxmZUNvbG9yTWF0cml4IHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwLjE3NyAtMC41NDcgLTAuNjY2IDAuMDAwIDEuMDM1IC0wLjYyNyAwLjI2NCAtMC42NTggMC4wMDAgMS4wMjAgLTAuNjE3IC0wLjU0NCAwLjE2NiAwLjAwMCAwLjk5NCAwLjAwMCAwLjAwMCAwLjAwMCAxLjAwMCAwLjAwMCIgLz48L2ZpbHRlcj48L2RlZnM+PGltYWdlIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWx0ZXI9InVybCgjZGFya3JlYWRlci1pbWFnZS1maWx0ZXIpIiB4bGluazpocmVmPSJkYXRhOmltYWdlL3N2Zyt4bWw7YmFzZTY0LFBITjJaeUI0Yld4dWN6MGlhSFIwY0RvdkwzZDNkeTUzTXk1dmNtY3ZNakF3TUM5emRtY2lJQ0IyYVdWM1FtOTRQU0l3SURBZ05UQWdOVEFpSUhkcFpIUm9QU0l4TURCd2VDSWdhR1ZwWjJoMFBTSXhNREJ3ZUNJK1BIQmhkR2dnWkQwaVRTQXlNU0F6SUVNZ01URXVOakF4TlRZeklETWdOQ0F4TUM0Mk1ERTFOak1nTkNBeU1DQkRJRFFnTWprdU16azRORE00SURFeExqWXdNVFUyTXlBek55QXlNU0F6TnlCRElESTBMak0xTlRRMk9TQXpOeUF5Tnk0ME5qQTVNemdnTXpZdU1ERTFOakkxSURNd0xqQTVNemMxSURNMExqTTBNemMxSUV3Z05ESXVNemMxSURRMkxqWXlOU0JNSURRMkxqWXlOU0EwTWk0ek56VWdUQ0F6TkM0MUlETXdMakk0TVRJMUlFTWdNell1TmpjNU5qZzRJREkzTGpReU1UZzNOU0F6T0NBeU15NDROemc1TURZZ016Z2dNakFnUXlBek9DQXhNQzQyTURFMU5qTWdNekF1TXprNE5ETTRJRE1nTWpFZ015QmFJRTBnTWpFZ055QkRJREk0TGpFNU9USXhPU0EzSURNMElERXlMamd3TURjNE1TQXpOQ0F5TUNCRElETTBJREkzTGpFNU9USXhPU0F5T0M0eE9Ua3lNVGtnTXpNZ01qRWdNek1nUXlBeE15NDRNREEzT0RFZ016TWdPQ0F5Tnk0eE9Ua3lNVGtnT0NBeU1DQkRJRGdnTVRJdU9EQXdOemd4SURFekxqZ3dNRGM0TVNBM0lESXhJRGNnV2lJdlBqd3ZjM1puUGc9PSIgLz48L3N2Zz4=");
+        position: absolute;
+        left: 53px;
+        top: 28px;
+        background-size: cover;
+    }
+
+    input {
+        background-color: var(--black100);
+        border: 1px solid var(--black200);
+        width: 100%;
+        padding: 14px 45px;
+        border-radius: 40px;
+        font-size: 16px;
+        color: var(--white);
+    }
+}
+
+@media (max-width: 800px){
+    .search__inner {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: var(--blackAlpha400);
+        backdrop-filter: blur(10px);
+        padding: 17px 20px 17px 200px;
+
+        label {
+            left: 213px;
+        }
+        input {
+            padding: 14px 14px 14px 45px;
+        }
+    }
+}
