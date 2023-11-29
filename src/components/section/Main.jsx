@@ -4,10 +4,12 @@ import { Helmet, HelmetProvider } from 'react-helmet-async'
 import Header from './Header'
 import Footer from './Footer'
 import Search from './Search'  // 추가
+import ScrollTo from '../../utils/scrollTo' // 추가
 
 const Main = (props) => {
     return (
         <HelmetProvider>
+            <ScrollTo />
             <Helmet 
                 titleTemplate="%s | JUNSS" 
                 defaultTitle="My Webpage" 
